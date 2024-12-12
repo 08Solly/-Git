@@ -1,15 +1,18 @@
-def prime_number(num,list):
+def prime_number(num,list_num):
     sum=0
     for y in range(1,10000):
         if num%y==0:
             sum+=1
     if sum==2:
-        list.append(num)
-        return list
+        return True
+    else:
+        return False
 
 def main():
-    list = []
+    _list_ = []
     for i in range(1, 10000):
-        list = prime_number(i,list)
-    print(list)
+        true_false = prime_number(i,_list_)
+        if true_false==True:
+            _list_.append(i)
+    print(_list_)
 main()
