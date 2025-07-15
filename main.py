@@ -7,8 +7,8 @@ def prime_number(num,list_num):
         return True
     else:
         return False
-def proof():
-    return 2
+def add():
+    return -2
 def main():
     _list_ = []
     for i in range(1, 10000):
@@ -17,3 +17,4 @@ def main():
             _list_.append(i)
     print(_list_)
 main()
+
